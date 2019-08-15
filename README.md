@@ -1,0 +1,2 @@
+# sh
+Base for centos
