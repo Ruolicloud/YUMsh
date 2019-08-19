@@ -1,4 +1,8 @@
 #!/bin/bash
+#快捷运行 + 自动更新脚本
+wget https://raw.githubusercontent.com/Ruolicloud/sh/master/yum.sh -O /bin/yumsh
+chmod -R 777 /bin/yumsh
+rm -rf $0
 function Finish(){
 yum clean all
 yum makecache
@@ -7,9 +11,11 @@ echo "It's finish"
 }
 function First(){
 clear
+uptime=`curl -sSL https://raw.githubusercontent.com/Ruolicloud/sh/master/yumupdate.txt`
 system=`rpm -q centos-release|cut -d- -f3`
 #备份原YUM
 mv /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.bak
+echo "Shell update on ${uptime}"
 echo "Which do you want to get?"
 echo "1.Ali YUM"
 echo "2.163 YUM"
