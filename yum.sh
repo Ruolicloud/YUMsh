@@ -40,6 +40,8 @@ case $yfrom in
      *)
       echo "None"
       mv /etc/yum.repos.d/CentOS-Base.repo.bak /etc/yum.repos.d/CentOS-Base.repo
+      echo "If you want to run bash again"
+      echo "Please enter: sh /bin/yumsh"
       exit
       ;;
 esac
