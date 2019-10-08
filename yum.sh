@@ -36,6 +36,7 @@ case $yfrom in
      4)
       rm -rf /etc/yum.repos.d/CentOS-Base.repo /bin/yumsh-log
       mv /etc/yum.repos.d/CentOS-Base.repo.bak /etc/yum.repos.d/CentOS-Base.repo
+      echo "Reproducte finish"
       ;;
      *)
       echo "None"
