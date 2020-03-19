@@ -1,6 +1,6 @@
 #!/bin/bash
-Downurl='https://raw.githubusercontent.com/Ruolicloud/YUMsh/sh'
-uptime=`curl -sSL https://raw.githubusercontent.com/Ruolicloud/sh/master/yumupdate.txt`
+Downurl='https://raw.githubusercontent.com/Ruolicloud/YUMsh/master'
+uptime=`curl -sSL https://raw.githubusercontent.com/Ruolicloud/YUMsh/master/yumupdate.txt`
 system=`rpm -q centos-release|cut -d- -f3`
 function Finish(){
 yum clean all
