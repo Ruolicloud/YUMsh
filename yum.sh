@@ -67,7 +67,7 @@ echo "3 --- Return YUM"
 echo "If you want to run again"
 echo "You can enter:yumsh"
 read -p "Please choose:" yfrom
-read -p "Please enter system version number"
+echo "Please enter system version number"
 echo "Example Centos8 : you should enter 8"
 echo "Centos9 : you should enter 9"
 echo "Now bash only run on 8/9"
